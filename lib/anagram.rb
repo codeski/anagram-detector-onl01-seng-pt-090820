@@ -10,7 +10,7 @@ class Anagram
   end
   
   def match(array)
-    array.find_all(@anagrms){|word| word.split("").sort.join}
+    array.map{|word| word.split("").sort.join}
     binding.pry
   end
   
