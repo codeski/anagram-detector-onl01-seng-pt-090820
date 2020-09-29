@@ -10,9 +10,11 @@ class Anagram
   end
   
   def match(array)
-    na = []
-    array.map do |word| 
+    na =
+    na = array.map do |word| 
       @anagrams == word.split("").sort
+    end
+    na.map do |e|
       if true 
         na << word
       else
