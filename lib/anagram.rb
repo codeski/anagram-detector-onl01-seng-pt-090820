@@ -10,17 +10,17 @@ class Anagram
   end
   
   def match(array)
-    na =
+    # na = []
     na = array.map do |word| 
       @anagrams == word.split("").sort
     end
-    na.map do |e|
+    final = na.map do |e|
       if true 
         na << word
       else
       end
     end
-    na
+    final
   end
   
 end
