@@ -17,7 +17,7 @@ class Anagram
       #   # na << word
       # else false
       # binding.pry
-      end
+      # end
     end
     # na
   end
