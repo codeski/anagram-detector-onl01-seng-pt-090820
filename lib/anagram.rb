@@ -6,12 +6,12 @@ class Anagram
   
   def initialize(word)
     @anagrams = word.split("").sort.join
-    binding.pry
+    # binding.pry
   end
   
   def match(array)
-    array.each{|word| word.split("").sort.join}
-    # binding.pry
+    array.find_all(@anagrms){|word| word.split("").sort.join}
+    binding.pry
   end
   
 end
