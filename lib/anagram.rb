@@ -10,8 +10,9 @@ class Anagram
   end
   
   def match(array)
-    na = array.map{|word| @anagrams == word.split("").sort.join}
-    na
+    array.map{|word| 
+    if @anagrams == word.split("").sort.join}
+
     
     # binding.pry
   end
