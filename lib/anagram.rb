@@ -13,10 +13,10 @@ class Anagram
     # na = []
     array.each do |word| 
       @anagrams == word.split("").sort.join
-      if true 
-        # na << word
-      else false
-      # binding.pry
+      # if true 
+      #   # na << word
+      # else false
+      binding.pry
       end
     end
     # na
