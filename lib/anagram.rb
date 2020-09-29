@@ -11,7 +11,7 @@ class Anagram
   
   def match(array)
     # na = []
-    na = array.map do |word, index| 
+    na = array.map do |word| 
       @anagrams == word.split("").sort
     end
   end
