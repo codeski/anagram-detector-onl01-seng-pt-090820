@@ -2,20 +2,16 @@
 require 'pry'
 class Anagram
   
-  attr_accessor :anagrams
+  attr_accessor :anagram
   
   def initialize(word)
-    @anagrams = word.split("").sort
-    # binding.pry
+    @anagram = word.split("").sort
   end
   
   def match(array)
     array.find_all do |word| 
-      @anagrams == word.split("").sort
+      @anagram == word.split("").sort
     end
   end
   
 end
-
-listen = Anagram.new("listen")
-listen.match(%w(enlist google inlets banana))
