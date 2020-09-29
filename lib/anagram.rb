@@ -5,19 +5,14 @@ class Anagram
   attr_accessor :anagrams
   
   def initialize(word)
-    @anagrams = word.split("").sort.join
+    @anagrams = word.split("").sort
     # binding.pry
   end
   
   def match(array)
     # na = []
     array.map do |word| 
-      @anagrams == word.split("").sort.join
-      # if true 
-      #   # na << word
-      # else false
-      # binding.pry
-      # end
+      @anagrams == word.split("").sort
     end
     # na
   end
