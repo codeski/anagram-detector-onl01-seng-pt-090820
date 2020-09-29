@@ -10,6 +10,7 @@ class Anagram
   
   def match(array)
     array.each{|word| word.split("").sort.join}
+    binding.pry
     if == @agangrams}
     if true 
   end
