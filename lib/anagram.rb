@@ -11,16 +11,9 @@ class Anagram
   
   def match(array)
     # na = []
-    na = array.map do |word| 
+    na = array.map do |word, index| 
       @anagrams == word.split("").sort
     end
-    final = na.map do |e|
-      if true 
-        na << word
-      else
-      end
-    end
-    final
   end
   
 end
