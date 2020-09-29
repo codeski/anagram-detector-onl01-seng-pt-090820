@@ -12,6 +12,7 @@ class Anagram
   def match(array)
     na = array.map{|word| @anagrams == word.split("").sort.join}
     
+    
     # binding.pry
   end
   
